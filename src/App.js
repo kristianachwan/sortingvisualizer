@@ -15,7 +15,7 @@ import { ChakraProvider, theme, Button, ButtonGroup, Container } from '@chakra-u
 function App() {
   const numberOfElements = useRef(20) 
   const [array, setArray] = useState([])   
-  const [animationSpeed, setAnimationSpeed] = useState(100/65); 
+  const [animationSpeed, setAnimationSpeed] = useState(100/10); 
   
 
 

@@ -1,5 +1,7 @@
-import { Text, Container, Button, Slider, SliderMark, Tooltip, SliderThumb, SliderFilledTrack, SliderTrack  } from "@chakra-ui/react"; 
+import { Link, Icon, Text, Container, Button, Slider, SliderMark, Tooltip, SliderThumb, SliderFilledTrack, SliderTrack  } from "@chakra-ui/react"; 
 import { useState } from 'react'
+import { AiOutlineGithub } from "react-icons/ai";
+
 function MyNavbar({ handleSubmit, animationSpeed, setAnimationSpeed}) {
   const [showTooltip, setShowTooltip] = useState(false)
 
@@ -46,7 +48,11 @@ function MyNavbar({ handleSubmit, animationSpeed, setAnimationSpeed}) {
         </Container>
       <Button className="btn" mx={3} my={5} colorScheme="facebook" size='sm'  onClick={handleSubmit}>
           Randomize
-      </Button> 
+      </Button>  
+      <Link href="https://github.com/kristianachwan/sortingvisualizer">
+
+      <Icon mt={4} as={AiOutlineGithub} w="30px" h="40px"/>
+      </Link>
       </Container>
   );
 }
